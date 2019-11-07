@@ -30,7 +30,7 @@ if categorie == 'Movies':
     str_list = list(filter(None, s))
 
     for i in range(len(t)):
-        print(t[i] + ': ' + str_list[i] + ' metascore.')
+        print('%s: %s metascore.' % (t[i], str_list[i]))
 
 if categorie == 'Games':
     url.get("https://www.metacritic.com/game")
@@ -47,7 +47,7 @@ if categorie == 'Games':
     str_list = list(filter(None, s))
 
     for i in range(len(t)):
-        print(t[i] + ': ' + str_list[i] + ' metascore.')
+        print('%s: %s metascore.' % (t[i], str_list[i]))
 
 if categorie == 'TV':
     url.get("https://www.metacritic.com/tv")
@@ -64,7 +64,7 @@ if categorie == 'TV':
     str_list = list(filter(None, s))
 
     for i in range(len(t)):
-        print(t[i] + ': ' + str_list[i] + ' metascore.')
+        print('%s: %s metascore.' % (t[i], str_list[i]))
 
 if categorie == 'Music':
     url.get("https://www.metacritic.com/music")
@@ -82,6 +82,9 @@ if categorie == 'Music':
     str_list = list(filter(None, s))
 
     for i in range(len(t)):
-        print(t[i] + ': ' + str_list[i] + ' metascore.')
+        print('%s: %s metascore.' % (t[i], str_list[i]))
 
 url.close()
+ex = input('When you are done type exit.\n')
+if ex == 'exit':
+    sys.exit()
